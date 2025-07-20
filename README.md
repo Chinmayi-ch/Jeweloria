@@ -1,12 +1,12 @@
-## 📐 Architecture Diagram
-
-![Jeweloria Architecture](./architecture.png)
-
 # 💎 Jeweloria – Full-Stack E-commerce Web Application
 
 A responsive, full-stack e-commerce application for a fictional jewelry brand built with **Node.js**, **Express.js**, **HTML**, and **CSS**. Designed to simulate a real-world shopping experience including cart management, form submission, and mock product data handling.
 
 ---
+
+## 📐 Architecture Diagram
+
+![Jeweloria Architecture](./architecture.png)
 
 ## ✨ Project Highlights
 
