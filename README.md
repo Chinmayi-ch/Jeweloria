@@ -67,8 +67,4 @@ File structuring and modular code organization
 Simulating real-world application logic in a simplified stack
 
 
-## 📐 Architecture Diagram
-
-![Jeweloria Architecture](./architecture.png)
-
 
