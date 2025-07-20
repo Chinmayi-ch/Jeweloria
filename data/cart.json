@@ -1,0 +1,119 @@
+{
+    "cart": [
+        {
+            "name": "Sapphire Halo",
+            "price": 899.99,
+            "quantity": 21
+        },
+        {
+            "name": "Vintage Filigree",
+            "price": 1199.99,
+            "quantity": 4
+        },
+        {
+            "name": "Platinum Princess",
+            "price": 2499.99,
+            "quantity": 1
+        },
+        {
+            "name": "Twisted Band",
+            "price": 849.99,
+            "quantity": 1
+        },
+        {
+            "name": "Marquise Diamond",
+            "price": 1899.99,
+            "quantity": 1
+        },
+        {
+            "name": "Rose Gold Cluster",
+            "price": 999.99,
+            "quantity": 1
+        },
+        {
+            "name": "Amethyst Accent",
+            "price": 1349.99,
+            "quantity": 1
+        },
+        {
+            "name": "Opal Infinity",
+            "price": 1099.99,
+            "quantity": 3
+        },
+        {
+            "name": "Pearl Eternity",
+            "price": 799.99,
+            "quantity": 1
+        },
+        {
+            "name": "Radiant Promise",
+            "price": 849.99,
+            "quantity": 1
+        },
+        {
+            "name": "Diamond Dream",
+            "price": 1349.99,
+            "quantity": 2
+        },
+        {
+            "name": "Blissful Band",
+            "price": 1099.99,
+            "quantity": 1
+        },
+        {
+            "name": "Love's Embrace",
+            "price": 799.99,
+            "quantity": 1
+        },
+        {
+            "name": "Eternal Shine",
+            "price": 1899.99,
+            "quantity": 1
+        },
+        {
+            "name": "Infinite Bond",
+            "price": 999.99,
+            "quantity": 1
+        },
+        {
+            "name": "Elegant Promise",
+            "price": 2499.99,
+            "quantity": 2
+        },
+        {
+            "name": "Timeless Vow",
+            "price": 1199.99,
+            "quantity": 1
+        },
+        {
+            "name": "Eternal Promise",
+            "price": 1299.99,
+            "quantity": 2
+        },
+        {
+            "name": "Forever Rose",
+            "price": 899.99,
+            "quantity": 4
+        },
+        {
+            "name": "Whisper of Love",
+            "price": 1599.99,
+            "quantity": 3
+        },
+        {
+            "name": "Enchanted Embrace",
+            "price": 749.99,
+            "quantity": 1
+        },
+        {
+            "name": "Ruby Trilogy",
+            "price": 749.99,
+            "quantity": 1
+        },
+        {
+            "name": "Emerald Cut",
+            "price": 1599.99,
+            "quantity": 1
+        }
+    ]
+}

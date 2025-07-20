@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jeweloria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="/public/css/cart.css">
+</head>
+
+<body>
+
+    <!--Cart Page-->
+
+    <div class="nav-container">
+        <ul class="navbar">
+            <li><a href="/views/home.html">Home</a></li>
+          <li><a href="/views/ring.html">Rings</a></li>
+          <li><a href="/views/bridal.html">Bridal</a></li>
+          <li><a href="/views/about_us.html">About Us</a></li>
+          <li><a href="/views/login.html">Login</a></li>
+          <li><a href="/views/cart.html">Cart</a></li>
+        </ul>
+    </div>
+
+    <div class="hero-section">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+        <h1>Your Shopping Cart</h1>
+        <div class="diamond-separator"></div>
+        <p class="subtitle">View and manage your selected jewelry items</p>
+    </div>
+
+    <div class="container">
+        <ul id="cart-items"></ul>
+        <button id="clear-cart-btn" onclick="clearCart()">Clear Cart</button>
+    </div>
+
+    <script>
+        function loadCart() {
+            fetch("http://localhost:5500/cart")
+                .then(response => response.json())
+                .then(cart => {
+                    console.log("Loaded Cart:", cart);
+                    let cartList = document.getElementById("cart-items");
+
+                    if (cart.length === 0) {
+                        cartList.innerHTML = "<li class='empty-cart'>Your cart is empty</li>";
+                    } else {
+                        cartList.innerHTML = cart.map(item => {
+                            let totalPrice = (item.price * (item.quantity || 1)).toFixed(2);
+                            return `
+                        <li>
+                            <div class="item-info">
+                                <span class="item-name">${item.name}</span> - 
+                                <span class="item-price">$${totalPrice}</span>
+                            </div>
+                            <div class="quantity-controls">
+                                <button class="decrease-btn" onclick="updateQuantity('${item.name}', -1)">−</button>
+                                <span class="item-quantity">${item.quantity || 1}</span>
+                                <button class="increase-btn" onclick="updateQuantity('${item.name}', 1)">+</button>
+                            </div>
+                        </li>
+                    `;
+                        }).join("");
+                    }
+                })
+                .catch(error => console.error("Error loading cart:", error));
+        }
+
+
+        function updateQuantity(name, change) {
+            fetch("http://localhost:5500/update_quantity", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ name, change })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                    loadCart();
+                });
+        }
+
+        function clearCart() {
+            fetch("http://localhost:5500/cart", { method: "DELETE" })
+                .then(() => {
+                    loadCart();
+                    fetch("http://localhost:5500/all_items_removed", { method: "POST" });
+                });
+        }
+
+        document.addEventListener("DOMContentLoaded", loadCart);
+    </script>
+</body>
+
+</html>

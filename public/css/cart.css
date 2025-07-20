@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  background-color: #faf7f2;
+  color: #4a3c2d;
+  line-height: 1.6;
+}
+
+.nav-container {
+  background-color: #f6f0e8;
+  padding: 15px 0;
+  text-align: center;
+  border-bottom: 1px solid #e8e0d5;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar {
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: rgba(27, 2, 14, 0.8);
+  transition: all 0.3s ease;
+  padding: 5px 15px;
+  font-size: 20px;
+  font-family: "Cormorant", serif;
+  position: relative;
+}
+
+.navbar li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgba(160, 82, 105, 0.9);
+  transition: width 0.3s ease;
+}
+
+.navbar li a:hover::after {
+  width: 100%;
+}
+
+.navbar a:hover {
+  color: rgba(160, 82, 105, 1);
+}
+
+.hero-section {
+  text-align: center;
+  padding: 70px 20px;
+  position: relative;
+  overflow: hidden;
+  background-color: #e8d8c0;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.circle-1 {
+  width: 120px;
+  height: 120px;
+  top: 20px;
+  left: 10%;
+}
+
+.circle-2 {
+  width: 80px;
+  height: 80px;
+  bottom: 30px;
+  right: 15%;
+}
+
+.circle-3 {
+  width: 150px;
+  height: 150px;
+  top: 40%;
+  right: 5%;
+}
+
+.hero-section h1 {
+  font-size: 46px;
+  color: #4a3c2d;
+  margin-bottom: 10px;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.diamond-separator {
+  width: 50px;
+  height: 1px;
+  background-color: #4a3c2d;
+  margin: 15px auto 20px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #6d5e4a;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto 80px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 0;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+}
+
+#cart-items {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+#cart-items li {
+  padding: 20px;
+  border-bottom: 1px solid #f0e9e0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.empty-cart {
+  text-align: center;
+  padding: 40px 0;
+  color: #998b7a;
+  font-style: italic;
+  font-size: 18px;
+}
+
+.item-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.item-name {
+  font-weight: 400;
+  font-size: 16px;
+  color: #4a3c2d;
+  flex: 2;
+}
+
+.item-price {
+  color: #8a7259;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0 20px;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.decrease-btn,
+.increase-btn {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid #e8e0d5;
+  background-color: #fff;
+  color: #4a3c2d;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.decrease-btn:hover,
+.increase-btn:hover {
+  background-color: #e8d8c0;
+  color: #4a3c2d;
+  border-color: #e8d8c0;
+}
+
+.item-quantity {
+  font-weight: 400;
+  min-width: 20px;
+  text-align: center;
+}
+
+#clear-cart-btn {
+  display: block;
+  margin: 30px auto 0;
+  padding: 12px 30px;
+  background-color: transparent;
+  color: #4a3c2d;
+  border: 1px solid #4a3c2d;
+  border-radius: 0;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#clear-cart-btn:hover {
+  background-color: #4a3c2d;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 5px 0;
+  }
+
+  .navbar li {
+    margin: 5px 15px;
+  }
+
+  .hero-section {
+    padding: 50px 15px;
+  }
+
+  .hero-section h1 {
+    font-size: 32px;
+  }
+
+  .container {
+    padding: 20px 15px;
+  }
+
+  .item-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .quantity-controls {
+    margin-top: 10px;
+  }
+}

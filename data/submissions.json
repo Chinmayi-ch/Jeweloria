@@ -1,0 +1,81 @@
+{
+    "submissions": [
+        {
+            "name": "chinmayi",
+            "email": "chinmayi@gmail.com",
+            "subject": "About the ring",
+            "message": "Nice rings",
+            "timestamp": "2025-03-24T16:54:55.542Z"
+        },
+        {
+            "name": "preethi",
+            "email": "preethi@gmail.com",
+            "subject": "About the bridal",
+            "message": "Nice collections",
+            "timestamp": "2025-03-24T16:55:48.660Z"
+        },
+        {
+            "name": "lakshmi",
+            "email": "lakshmi@gmail.com",
+            "subject": "About ring",
+            "message": "Nice collections",
+            "timestamp": "2025-03-24T16:56:31.589Z"
+        },
+        {
+            "name": "Kavya",
+            "email": "kavya@gmail.com",
+            "subject": "About the Rose gold cluster ring",
+            "message": "Very shining",
+            "timestamp": "2025-03-24T16:57:09.786Z"
+        },
+        {
+            "name": "Navika",
+            "email": "navika@gmail.com",
+            "subject": "Ring",
+            "message": "What is the range on price",
+            "timestamp": "2025-03-24T16:57:36.977Z"
+        },
+        {
+            "name": "Swathi",
+            "email": "swathi@gmail.com",
+            "subject": "Jewels",
+            "message": "Any discounts",
+            "timestamp": "2025-03-24T16:57:59.848Z"
+        },
+        {
+            "name": "Manjula",
+            "email": "manju@gmail.com",
+            "subject": "Necklace",
+            "message": "Grams of each necklace",
+            "timestamp": "2025-03-24T16:58:41.426Z"
+        },
+        {
+            "name": "Adithiii",
+            "email": "ad@gmail.com",
+            "subject": "Rings",
+            "message": "Gorgeous",
+            "timestamp": "2025-03-24T17:24:45.173Z"
+        },
+        {
+            "name": "kavana",
+            "email": "kavana@gmail.com",
+            "subject": "About the Bridals collection",
+            "message": "Any discounts",
+            "timestamp": "2025-03-25T04:26:40.806Z"
+        },
+        {
+            "name": "aarushi",
+            "email": "aarushi@gmail.com",
+            "subject": "rings",
+            "message": "Nice",
+            "timestamp": "2025-03-28T06:23:37.007Z"
+        },
+        {
+            "name": "Seema",
+            "email": "seema@gmail.com",
+            "subject": "About address",
+            "message": "exact location",
+            "timestamp": "2025-03-30T16:00:01.855Z"
+        }
+    ]
+}
