@@ -4,8 +4,6 @@ A responsive, full-stack e-commerce application for a fictional jewelry brand bu
 
 ---
 
-## 📐 Architecture Diagram
-
 ![Jeweloria Architecture](./architecture.png)
 
 ## ✨ Project Highlights
