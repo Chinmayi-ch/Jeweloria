@@ -44,7 +44,7 @@ A responsive, full-stack e-commerce application for a fictional jewelry brand bu
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/Jeweloria.git
+git clone https://github.com/Chinmayi-ch/Jeweloria.git
 cd Jeweloria
 
 # Install dependencies
@@ -53,7 +53,7 @@ npm install
 # Start the server
 node server.js
 Then open your browser at:
-➡️ http://localhost:3000
+➡️ http://localhost:5500
 
 🧠 What I Learned
 Backend routing and API creation using Express
